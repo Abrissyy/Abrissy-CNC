@@ -23,6 +23,6 @@ clear <br>
 3. Type your Port and Host like. 127.0.0.1
 <br>
 4. Connect and login
-# If you have troubles dm me on telegram or discord
+<h3>  If you have troubles dm me on telegram or discord</h3>
 Telegram: @hyperb1tch
 Discord: abrissyo
