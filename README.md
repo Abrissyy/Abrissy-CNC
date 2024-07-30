@@ -16,3 +16,9 @@ unban <br>
 logout <br>
 plan <br>
 clear <br>
+# How to connect 
+1. Download PuTTY <br>
+2. Open PuTTY and set connection type RAW <br>
+3. Type your Port and Host like. 127.0.0.1
+<br>
+4. Connect and login
