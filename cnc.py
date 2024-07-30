@@ -127,8 +127,8 @@ def update_ban_status(username, new_status, filename):
         for line in lines:
             parts = line.strip().split(':')
             if parts[0] == username:
-                parts[-1] = new_status  # Zamień ostatni element na nowy status
-            file.write(':'.join(parts) + '\n')  # Zapisz zmienioną lub niezmienioną linię    
+                parts[-1] = new_status  
+            file.write(':'.join(parts) + '\n')  # 
 def update_title(client, username, max_time, days_left):
     while 1:
         try:
@@ -138,14 +138,14 @@ def update_title(client, username, max_time, days_left):
             client.close()
 def check_username_in_file(c_username, file_path):
     try:
-        # Otwórz plik w trybie odczytu
+        
         with open(file_path, 'r') as file:
-            # Sprawdź każdą linię w pliku
+        
             for line in file:
                 if c_username in line:
                     print("No enough concurrents!")
                     return False
-        # Jeśli nie znaleziono w żadnej linii
+    
         return True
     except FileNotFoundError:
         print(f"File {file_path} not found.")
@@ -372,11 +372,11 @@ def handle_client(client, address):
             password = client.recv(1024).decode('cp1252').strip()
         break
 
-    # handle client
+    
     if password != '\xff\xff\xff\xff\75':
         send(client, ansi_clear, False)
 
-        # Check login credentials
+        
         if not find_login(username, password):
             send(client, Fore.RED + 'Invalid credentials or session expired')
             time.sleep(1)
