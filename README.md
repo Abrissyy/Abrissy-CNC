@@ -1,3 +1,4 @@
+<h3>This CNC is ready to use, Gimm star if you want :3</h3>
 # Abrissy-CNC
 simple python CNC for C2 <br>
 <br> 
